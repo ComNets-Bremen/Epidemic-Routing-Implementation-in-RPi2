@@ -1,0 +1,20 @@
+#!/bin/bash
+
+sudo rm /var/run/wpa_supplicant/wlan0 -f
+sudo killall wpa_supplicant
+
+shopt -s extglob
+sudo timedatectl set-ntp false
+sudo mv /home/alarm/epidemic/logs/log /home/alarm/epidemic/logs/$(date +"%Y-%m-%d_%H-%M-%S")
+mkdir /home/alarm/epidemic/logs/log
+mkdir /home/alarm/epidemic/logs/log/visitedlist
+mkdir /home/alarm/epidemic/logs/log/summary
+sudo rm -r /home/alarm/epidemic/myfiles
+sudo rm -r /home/alarm/epidemic/efiles
+mkdir /home/alarm/epidemic/myfiles
+cp -r /home/alarm/epidemic/initialfiles/efiles /home/alarm/epidemic/efiles
+
+sudo chown alarm /home/alarm/epidemic/efiles
+sudo chown alarm /home/alarm/epidemic/myfiles
+
+sudo python2 /home/alarm/epidemic/src/p2p_events.py
