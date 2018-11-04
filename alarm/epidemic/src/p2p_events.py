@@ -215,10 +215,7 @@ class P2P_EVENT (threading.Thread):
                 print "Device erased"+str(self.VALlist[-1]);
                 ####################################
                 self.VALlist.pop();
-                self.Timelist.pop();
-                ####################################
-                event_record.saveList(self.VALlist);
-                ####################################                         
+                self.Timelist.pop();                      
             contactTime=datetime.datetime.now();
             self.VALlist.insert(0, self.val);
             self.Timelist.insert(0, contactTime);
@@ -227,6 +224,9 @@ class P2P_EVENT (threading.Thread):
             ####################################
             event_record.addEvent(7,self.val);                              
             print "Completed communication with:"+str(self.val);
+            ####################################
+            ####################################
+            event_record.saveList(self.VALlist);
             ####################################
         else:
             self.WDTreset=datetime.datetime.now();
