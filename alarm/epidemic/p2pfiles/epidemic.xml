@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<top>
-  <peerlife>120</peerlife>
-  <visitlimit>99999</visitlimit>
-  <maxpkj>99999</maxpkj>
-  <refresh>10</refresh>
-  <buffer>512</buffer>
-  <synchronization>3</synchronization>
-</top>
