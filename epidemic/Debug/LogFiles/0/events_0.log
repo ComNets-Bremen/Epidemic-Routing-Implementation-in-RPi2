@@ -1,0 +1,12 @@
+Time-stamp(seconds):1562335901.7754762,Device-found,neighbor:1,,Level(dBm):-32
+Time-stamp(seconds):1562335906.4952133,Connection-accept,neighbor:1,,Level(dBm):-22
+Time-stamp(seconds):1562335910.0519705,Start-Comunication,neighbor:1
+Time-stamp(seconds):1562335910.101868,RSSI,neighbor:1,signal:  	-28 dBm,signal avg:	-28 dBm
+Time-stamp(seconds):1562335910.1270213,Receivig-new-data,neighbor:1,total-size(Bytes):6
+Time-stamp(seconds):1562335910.1271856,Received-Summary,neighbor:1,total-size(Bytes):6
+Time-stamp(seconds):1562335910.1273243,Send-Summary,neighbor:1,total-size(Bytes):6
+Time-stamp(seconds):1562335910.1485527,RSSI,neighbor:1,signal:  	-23 dBm,signal avg:	-27 dBm
+Time-stamp(seconds):1562335910.2670877,Close-Comunication,neighbor:1
+Time-stamp(seconds):1562335912.8878598,Device-found,neighbor:1,,Level(dBm):-28
+Time-stamp(seconds):1562335934.5777555,Device-found,neighbor:1,,Level(dBm):-30
+Time-stamp(seconds):1562335944.8446457,Device-found,neighbor:1,,Level(dBm):-28
